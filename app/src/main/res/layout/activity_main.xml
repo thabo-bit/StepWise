@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/pic2"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/button"
+        android:background="@drawable/button"
+        android:layout_width="210dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="4dp"
+        android:text="Get Started"
+        android:onClick="next"
+        android:drawableEnd="@drawable/arrow_forward_48px"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:textSize="18dp"
+        android:id="@+id/textView"
+        android:layout_width="317dp"
+        android:layout_height="108dp"
+        android:layout_marginBottom="1dp"
+        android:text="Stepwise – Turn big tasks into simple steps, organize by priority and time, and track your progress with ease. Stay focused, stay on track. "
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
