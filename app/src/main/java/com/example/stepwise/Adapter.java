@@ -21,13 +21,13 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         this.myTask = myTask;
     }
 
-    @Override // androidx.recyclerview.widget.RecyclerView.Adapter
+    @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.task_looks, (ViewGroup) null, false);
         return new MyViewHolder(view);
     }
 
-    @Override // androidx.recyclerview.widget.RecyclerView.Adapter
+    @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         holder.description.setText(this.myTask.get(position).getDescription());
         holder.taskname.setText(this.myTask.get(position).getTaskName());
@@ -44,7 +44,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         }
     }
 
-    @Override // androidx.recyclerview.widget.RecyclerView.Adapter
+    @Override
     public int getItemCount() {
         return this.myTask.size();
     }
@@ -59,12 +59,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            this.taskname = (TextView) itemView.findViewById(R.id.taskTitle);
-            this.description = (TextView) itemView.findViewById(R.id.taskDescription);
-            this.priority = (TextView) itemView.findViewById(R.id.taskPriority);
-            this.time = (TextView) itemView.findViewById(R.id.taskDateTime);
-            this.notification = (TextView) itemView.findViewById(R.id.taskNotificationTime);
-            this.priority_color = itemView.findViewById(R.id.priorityIndicator);
+            taskname = (TextView) itemView.findViewById(R.id.taskTitle);
+            description = (TextView) itemView.findViewById(R.id.taskDescription);
+            priority = (TextView) itemView.findViewById(R.id.taskPriority);
+            time = (TextView) itemView.findViewById(R.id.taskDateTime);
+            notification = (TextView) itemView.findViewById(R.id.taskNotificationTime);
+            priority_color = itemView.findViewById(R.id.priorityIndicator);
         }
     }
 }

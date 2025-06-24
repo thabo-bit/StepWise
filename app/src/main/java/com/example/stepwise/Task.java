@@ -9,14 +9,15 @@ public class Task {
     String taskName;
     String time;
 
-    public Task(String date, String description, String time, String taskName, String reminder, String priority) {
-        this.date = date;
-        this.description = description;
-        this.time = time;
+    public Task(String taskName, String description, String priority, String date, String reminder, String time) {
         this.taskName = taskName;
-        this.reminder = reminder;
+        this.description = description;
         this.priority = priority;
+        this.date = date;
+        this.reminder = reminder;
+        this.time = time;
     }
+
 
     public String getDate() {
         return this.date;
